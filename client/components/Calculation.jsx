@@ -1,20 +1,26 @@
 import React from 'react'
 
-import { Modal, Button } from 'react-materialize';
+import { Tabs, Tab } from 'react-materialize';
 
-const trigger = <Button>Open Modal</Button>;
-
-export default () => (
-  <Modal header="Modal Header" trigger={trigger}>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </Modal>
-);
 
 class Calculation extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <h1>I'm the calculation component.</h1>
+        <Tabs className="tab-demo z-depth-1">
+          <Tab title="Test 1">
+            Test 1
+          </Tab>
+          <Tab title="Test 2" active>
+            Test 2
+          </Tab>
+          <Tab title="Test 3">
+            Test 3
+          </Tab>
+          <Tab title="Test 4">
+            Test 4
+          </Tab>
+        </Tabs>
       </React.Fragment>
     )
   }
