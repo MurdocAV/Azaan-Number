@@ -97,6 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Calculation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Calculation */ "./client/components/Calculation.jsx");
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -117,6 +118,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var App =
 /*#__PURE__*/
 function (_React$Component) {
@@ -131,7 +133,7 @@ function (_React$Component) {
   _createClass(App, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Hello React!"));
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Calculation__WEBPACK_IMPORTED_MODULE_1__["default"], null));
     }
   }]);
 
@@ -139,6 +141,17 @@ function (_React$Component) {
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./client/components/Calculation.jsx":
+/*!*******************************************!*\
+  !*** ./client/components/Calculation.jsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /home/development/workspace/Azaan-Number/client/components/Calculation.jsx: Only one default export allowed per module. (23:0)\n\n\u001b[0m \u001b[90m 21 | \u001b[39m}\u001b[0m\n\u001b[0m \u001b[90m 22 | \u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 | \u001b[39m\u001b[36mexport\u001b[39m \u001b[36mdefault\u001b[39m \u001b[33mCalculation\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m\u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Object.raise (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:6400:17)\n    at Object.checkDuplicateExports (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:11235:18)\n    at Object.checkExport (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:11170:14)\n    at Object.parseExport (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:11009:12)\n    at Object.parseStatementContent (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:10036:27)\n    at Object.parseStatement (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:9932:17)\n    at Object.parseBlockOrModuleBlockBody (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:10508:25)\n    at Object.parseBlockBody (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:10495:10)\n    at Object.parseTopLevel (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:9861:10)\n    at Object.parse (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:11373:17)\n    at parse (/home/development/workspace/Azaan-Number/node_modules/@babel/parser/lib/index.js:11409:38)\n    at parser (/home/development/workspace/Azaan-Number/node_modules/@babel/core/lib/transformation/normalize-file.js:168:34)\n    at normalizeFile (/home/development/workspace/Azaan-Number/node_modules/@babel/core/lib/transformation/normalize-file.js:102:11)\n    at runSync (/home/development/workspace/Azaan-Number/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/home/development/workspace/Azaan-Number/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/home/development/workspace/Azaan-Number/node_modules/@babel/core/lib/transform.js:34:34)\n    at _combinedTickCallback (internal/process/next_tick.js:131:7)\n    at process._tickCallback (internal/process/next_tick.js:180:9)");
 
 /***/ }),
 

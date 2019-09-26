@@ -1,10 +1,14 @@
 import React from 'react'
+import Calculation from './Calculation'
 
 class App extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <h1>Hello React!</h1>
+        <Calculation></Calculation>
+        {/* <Calculation></Calculation>
+        <Calculation></Calculation>
+        <Calculation></Calculation> */}
       </React.Fragment>
     )
   }
