@@ -27,8 +27,8 @@ function TabPanel(props) {
       component="div"
       role="tabpanel"
       hidden={value !== index}
-      id={`horizontal-tabpanel-${index}`}
-      aria-labelledby={`horizontal-tab-${index}`}
+      id={`'horizontal-tabpanel-${index}`}
+      aria-labelledby={`'horizontal-tab-${index}`}
       {...other}
     >
       <Box p={3}>{children}</Box>
@@ -44,8 +44,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: `horizontal-tab-${index}`,
-    'aria-controls': `horizontal-tabpanel-${index}`,
+    id: `'horizontal-tab-${index}`,
+    'aria-controls': `'horizontal-tabpanel-${index}`,
   };
 }
 
@@ -70,6 +70,7 @@ export default function VerticalTabs() {
   };
 
   return (
+    <div className={"tabContainer"}>
       <Tabs
         orientation="'horizontal"
         variant="scrollable"
@@ -85,6 +86,10 @@ export default function VerticalTabs() {
         <Tab label="Item Five" {...a11yProps(4)} />
         <Tab label="Item Six" {...a11yProps(5)} />
         <Tab label="Item Seven" {...a11yProps(6)} />
+        <Tab label="Item Eight" {...a11yProps(7)} />
+        <Tab label="Item Nine" {...a11yProps(8)} />
+        <Tab label="Item Ten" {...a11yProps(9)} />
       </Tabs>
+    </div>
   );
 }

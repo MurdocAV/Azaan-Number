@@ -266,8 +266,8 @@ function TabPanel(props) {
     component: "div",
     role: "tabpanel",
     hidden: value !== index,
-    id: "horizontal-tabpanel-".concat(index),
-    "aria-labelledby": "horizontal-tab-".concat(index)
+    id: "'horizontal-tabpanel-".concat(index),
+    "aria-labelledby": "'horizontal-tab-".concat(index)
   }, other), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_6__["default"], {
     p: 3
   }, children));
@@ -281,8 +281,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: "horizontal-tab-".concat(index),
-    'aria-controls': "horizontal-tabpanel-".concat(index)
+    id: "'horizontal-tab-".concat(index),
+    'aria-controls': "'horizontal-tabpanel-".concat(index)
   };
 }
 
@@ -311,7 +311,9 @@ function VerticalTabs() {
     setValue(newValue);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "tabContainer"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
     orientation: "'horizontal",
     variant: "scrollable",
     value: value,
@@ -332,7 +334,13 @@ function VerticalTabs() {
     label: "Item Six"
   }, a11yProps(5))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
     label: "Item Seven"
-  }, a11yProps(6))));
+  }, a11yProps(6))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
+    label: "Item Eight"
+  }, a11yProps(7))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
+    label: "Item Nine"
+  }, a11yProps(8))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
+    label: "Item Ten"
+  }, a11yProps(9)))));
 }
 
 /***/ }),
