@@ -266,8 +266,8 @@ function TabPanel(props) {
     component: "div",
     role: "tabpanel",
     hidden: value !== index,
-    id: "vertical-tabpanel-".concat(index),
-    "aria-labelledby": "vertical-tab-".concat(index)
+    id: "horizontal-tabpanel-".concat(index),
+    "aria-labelledby": "horizontal-tab-".concat(index)
   }, other), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_6__["default"], {
     p: 3
   }, children));
@@ -281,8 +281,8 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: "vertical-tab-".concat(index),
-    'aria-controls': "vertical-tabpanel-".concat(index)
+    id: "horizontal-tab-".concat(index),
+    'aria-controls': "horizontal-tabpanel-".concat(index)
   };
 }
 
@@ -311,14 +311,12 @@ function VerticalTabs() {
     setValue(newValue);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.root
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    orientation: "vertical",
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tabs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    orientation: "'horizontal",
     variant: "scrollable",
     value: value,
     onChange: handleChange,
-    "aria-label": "Vertical tabs example",
+    "aria-label": "Horizontal tabs example",
     className: classes.tabs
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
     label: "Item One"
@@ -334,28 +332,7 @@ function VerticalTabs() {
     label: "Item Six"
   }, a11yProps(5))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Tab__WEBPACK_IMPORTED_MODULE_4__["default"], _extends({
     label: "Item Seven"
-  }, a11yProps(6)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 0
-  }, "Item One"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 1
-  }, "Item Two"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 2
-  }, "Item Three"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 3
-  }, "Item Four"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 4
-  }, "Item Five"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 5
-  }, "Item Six"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 6
-  }, "Item Seven"));
+  }, a11yProps(6))));
 }
 
 /***/ }),
