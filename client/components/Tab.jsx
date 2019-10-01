@@ -1,11 +1,12 @@
 import React from 'react'
+import Tabs from '@material-ui/core/Tabs';
 
 class TabHeader extends React.Component {
   render () {
     return (
-      <h1>Hello</h1>
+      <Tabs>Hello World</Tabs>
     )
   }
 }
 
-export default Calculation
+export default TabHeader
